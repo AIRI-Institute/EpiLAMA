@@ -1,0 +1,40 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "vaccine-design"
+version = "0.0.1"
+description = "vaccine-design"
+authors = [
+  { name = "Your name (or your organization/company/team)" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+
+]
+requires-python = "~=3.12"
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+)/
+'''
+
+[tool.ruff.lint.isort]
+known-first-party = ["vaccine-design"]
+force-sort-within-sections = true
+
+
+[tool.ruff]
+line-length = 120
+exclude = [".git", "references", "models", "data"]
+
+[tool.ruff.lint]
+ignore = ["E731", "E266", "E501", "C901", "W503"]

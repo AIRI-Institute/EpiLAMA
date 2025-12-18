@@ -1,0 +1,13 @@
+molecular_weight
+aromaticity
+ss_helix
+ss_turn
+ss_sheet
+isoelectric_point
+gravy
+molar_extinction_reduced
+instability_index
+shannon_entropy
+hydrophobic_moment
+boman_ind
+ms_whim

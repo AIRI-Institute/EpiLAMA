@@ -1,0 +1,24 @@
+train_lama:
+  response: IL-4 release # IFNg release, IL-2 release
+  host: Homo sapiens (human)  # Homo sapiens (human), Mus musculus C57BL/6
+  balance_method: null
+  variant: CV_v1_add_none_human
+  subset_duplicates:  # ['Epitope ID', 'Starting Position', 'Ending Position'], None
+    - 'Epitope ID'
+  group_col: Epitope ID  # NCBI ID, Uniprot ID, Epitope ID
+  features: embeddings  # embeddings, aac, dpc, aap
+
+data:
+  cytokine_dir: data/
+  embeddings_dir: data/embeddings/
+  embeddings_df_path: data/embeddings/ifnepitope2_human_dataset.hdf5  # example default
+  target_df_path: data/processed/base_tcell_data_ifng.csv # example default
+  parented_df_path: data/parent_epitopes/ifnepitope2_human_dataset.csv # example default
+  multiple_embeddings: False  # true for bench_ifng
+  prepare_target_df: True
+  train_df_path: data/benchmarks/ifnepitope2/benchmark_train.csv
+  test_df_path: data/benchmarks/ifnepitope2/benchmark_test.csv
+
+
+clearml:
+  project_name: vaccine-design
