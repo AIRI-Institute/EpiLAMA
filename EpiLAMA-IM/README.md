@@ -52,5 +52,5 @@ python epilama_im_inference.py \
 The model reported in the paper should be downloaded and placed in the `trained/` folder first:
 
 ```bash
-wget -P trained/ LINK/TO/MODEL/laml_allele_desc_il.joblib
+wget -P trained/ https://bioinformatics-kardymon.obs.ru-moscow-1.hc.sbercloud.ru/EpiLAMA/laml_allele_desc_il.joblib
 ```
